@@ -1,0 +1,27 @@
+{
+  "datasets": [
+    "fmnist",
+    "cifar10"
+  ],
+  "models": [
+    "small_cnn",
+    "deep_cnn"
+  ],
+  "epochs": 15,
+  "batch_size": 64,
+  "target_train_size": 800,
+  "audit_size": 200,
+  "delta": 0.00125,
+  "epsilons": [
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "dp_accounting": "Opacus 1.x RDP accountant via make_private_with_epsilon"
+}
